@@ -1,0 +1,91 @@
+p1
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    float num1, num2; //recebendo dados
+
+    cout << "Digite o primeiro numero:"; //mostra mensagem
+    cin >> num1; //aloca valores na variavel escolhida
+
+    cout << "Segundo numero:";
+    cin >> num2;
+    
+    return 0;
+}
+
+------------------------------------------------------------------------
+
+p4
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    float num1, num2; //recebendo dados
+
+    cout << "Digite o primeiro numero:"; //mostra mensagem
+    cin >> num1; //aloca valores na variavel escolhida
+
+    cout << "Segundo numero:";
+    cin >> num2;
+
+    //Exibindo as operações
+    cout<<"soma         :"<<num1+num2<<endl;
+    cout<<"subtração        :"<<num1-num2<<endl;
+    cout<<"multiplicação        :"<<num1*num2<<endl;
+    cout<<"divisão          :"<<num1/num2<<endl;
+    cout<<"modulo           :"<<(int)num1%(int)num2<<endl;
+    cout<<"porcentagem          :"<<100.0*(num1/num2)<<endl;
+    cout<<"media            :"<<(num1+num2)/2<<endl;
+    
+    return 0;
+}
+
+----------------------------------------------------------------------------------------
+
+p7
+
+#include <iostream>
+#define PRECO 1.99 //CONSTANTE
+
+int main()
+{
+    //VARIAVEIS
+    int pera;
+    char qualidade;
+    float peso;
+    pera = 3;
+    qualidade = 'A';
+    peso = 0.653;
+
+    std::cout<<pera;
+    std::cout<<qualidade;
+    std::cout<<peso;
+}
+
+--------------------------------------------------------------------------------------
+
+desafio
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    float nota1, nota2, nota3;
+
+    cout<<"Escreva sua primeira nota:";
+    cin>>nota1;
+
+    cout<<"Escreva sua segunda nota:";
+    cin>>nota2;
+
+    cout<<"Escreva sua terceita nota:";
+    cin>>nota3;
+
+    cout<<"Media:"<<(nota1+nota2+nota3)/3;
+}

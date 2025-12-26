@@ -1,0 +1,142 @@
+p9
+
+// programa com os tipos de variáveis
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    int inteiro = 10;
+    float pontoFlutuante = 3.14f;
+    double pontoFlutuanteDuplo = 3.14159;
+    char caractere = 'A';
+    bool booleano = true;
+    long num1 = 1234567890;
+    long num2 = 9876543210;
+
+    // Realizando operações aritméticas
+    long soma = num1 + num2;
+    cout << "long: " << soma << endl;
+    cout << "int: " << inteiro << endl;
+    cout << "float: " << pontoFlutuante << endl;
+    cout << "double: " << pontoFlutuanteDuplo << endl;
+    cout << "char: " << caractere << endl;
+    cout << "bool: " << booleano << endl;
+
+    long int numero; // usando modificador de tipo
+
+    return 0;
+}
+
+-------------------------------------------------------------------------------------
+
+p10
+
+#include <iostream>
+using namespace std;
+int main(){
+    char nome[6] = {'C', 'e', 'l', 'i', 'a', '\0'};
+    cout << "Meu nome e:";
+    cout << nome << endl;
+
+    return 0;
+}
+
+----------------------------------------------------------------------------------------
+
+p12
+
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main() {
+    string nome = "célia";
+    string letra = "a";
+    string sobrenome = " kouth cabral";
+
+    cout << "meu nome é: " << nome << endl;
+
+    // append para juntar strings
+    cout << "nome completo " << (nome.append(sobrenome)) << endl;
+
+    // length para contar tamanho da string
+    cout << "tamanho " << (nome.length()) << endl;
+    // também da certo o nome.size()
+
+    cout << "\nPrimeira letra do nome: " << nome[0]; // mostrando a primeira letra
+
+    nome[0] = 'T'; // alterando a primeira letra do nome
+
+    cout << "\nmeu nome agora é: " << nome << endl;
+
+    return 0;
+}
+
+----------------------------------------------------------------------------------------------------
+
+p13
+
+#include <iostream>
+#include <string>
+
+int main(){
+    std::string str = "Celia, Kouth!";
+    
+    //posição 7 altera 5 letras
+    str.replace(7, 5, "Cabral");
+    std::cout << str << std::endl; //saída: celia, cabral!
+
+    //desafio 1
+    str.replace(7, 6, "me ajuda");
+    std::cout << str << std::endl;
+
+    return 0;
+}
+
+-----------------------------------------------------------------------------------------------------
+
+p14 + desafio
+
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main(){
+    string str = "Leticia Favero";
+    str.insert(8, "Linda ");
+    cout << str << endl;
+    str.append("Linda 2 ");
+    str.append("Linda 3");
+    cout << str << endl;
+}
+
+------------------------------------------------------------------------------------------
+
+desafio
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int k = 10, j = 10;
+    // para somar
+    k = k + 1;
+    cout << "O valor de k alterado para " << k << "\n";
+    // para subtrair
+    j = j - 1;
+    cout << "O valor de j alterado para " << j << "\n";
+    // mas tambem pode ser
+    k++;
+    cout << "O valor de k alterado para " << k << "\n";
+    j--;
+    cout << "O valor de j alterado para " << j << "\n";
+    // e tambem pode ser
+    ++k;
+    cout << "O valor de k alterado para " << k << "\n";
+    --j;
+    cout << "O valor de j alterado para " << j << "\n";
+
+    return 0;
+}
