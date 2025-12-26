@@ -1,0 +1,27 @@
+# Java & IDE
+bin/
+out/
+target/
+*.class
+*.jar
+.classpath
+.project
+.settings/
+.idea/
+.vscode/
+
+# OS
+Thumbs.db
+Desktop.ini
+
+# Logs & temp
+*.log
+tmp/
+
+# Local data files (não versionar dados pessoais por padrão)
+contas.dat
+categorias.dat
+transacoes.csv
+
+# Build artifacts
+dist/
